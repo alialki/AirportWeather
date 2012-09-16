@@ -13,9 +13,12 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <textField translatesAutoresizingMaskIntoConstraints="NO" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type ICAO Code..." minimumFontSize="17" text="" id="Bb5-uC-Usl">
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="go"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <connections>
+                                    <outlet property="delegate" destination="2" id="Srn-2d-PgR"/>
+                                </connections>
                             </textField>
                             <button translatesAutoresizingMaskIntoConstraints="NO" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" hasAttributedTitle="NO" lineBreakMode="middleTruncation" id="Ktk-zZ-c2L">
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -27,8 +30,8 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="hideKeyboard:" destination="2" eventType="touchDown" id="pbM-4X-XaR"/>
                                     <action selector="searchForWeather:" destination="2" eventType="touchDown" id="74k-jP-Qfo"/>
-                                    <action selector="textFieldReturn:" destination="2" eventType="touchDown" id="an8-I2-iU4"/>
                                 </connections>
                             </button>
                             <label translatesAutoresizingMaskIntoConstraints="NO" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" text="Temperature" adjustsFontSizeToFit="NO" autoshrinkMode="none" id="61D-1u-7yx">
@@ -105,7 +108,7 @@
                             <constraint firstAttribute="trailing" secondItem="fum-oq-bDO" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="q8i-Xx-xA0"/>
                         </constraints>
                         <connections>
-                            <action selector="backgroundTouched:" destination="2" eventType="touchDown" id="qQc-6m-BwT"/>
+                            <action selector="hideKeyboard:" destination="2" eventType="touchDown" id="nu2-LH-Y5i"/>
                         </connections>
                     </view>
                     <connections>
@@ -124,9 +127,8 @@
         <class className="AWViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/AWViewController.h"/>
             <relationships>
-                <relationship kind="action" name="backgroundTouched:"/>
+                <relationship kind="action" name="hideKeyboard:"/>
                 <relationship kind="action" name="searchForWeather:"/>
-                <relationship kind="action" name="textFieldReturn:"/>
                 <relationship kind="outlet" name="airportLocation" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="observationTime" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="searchInput" candidateClass="UITextField"/>

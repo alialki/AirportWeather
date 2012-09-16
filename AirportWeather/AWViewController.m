@@ -15,8 +15,6 @@
 @property (strong, nonatomic) UILabel *temperature;
 @property (strong, nonatomic) UILabel *observationTime;
 @property (strong, nonatomic) GeoNamesWeatherController *weatherController;
-@property (strong, nonatomic) NSString *plistPath;
-@property (strong, nonatomic) NSMutableDictionary *plistDict;
 
 @end
 
@@ -27,8 +25,6 @@
 @synthesize temperature;
 @synthesize observationTime;
 @synthesize weatherController;
-@synthesize plistPath;
-@synthesize plistDict;
 
 NSString *sLocationPreferenceKey = @"sLocationPreferenceKey";
 
@@ -40,21 +36,12 @@ NSString *sLocationPreferenceKey = @"sLocationPreferenceKey";
     weatherController = [[GeoNamesWeatherController alloc] initWithDelegate:self];
     
     //retrieve potential saved location
-    NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
-    
-    // getting the saved location
-    NSString *savedLocation = [prefs stringForKey:sLocationPreferenceKey];
+    NSString *savedLocation = [[NSUserDefaults standardUserDefaults] stringForKey:sLocationPreferenceKey];
     
     if(savedLocation != nil) {
         [[self searchInput] setText:savedLocation];
         [self searchForWeather:nil];
     }
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 - (IBAction)searchForWeather:(id)sender;
@@ -63,14 +50,21 @@ NSString *sLocationPreferenceKey = @"sLocationPreferenceKey";
     [[self weatherController] retrieveWeatherData:[searchInput text]];
 }
 
--(IBAction)textFieldReturn:(id)sender
-{
-    [sender resignFirstResponder];
-}
--(IBAction)backgroundTouched:(id)sender
+-(IBAction)hideKeyboard:(id)sender
 {
     [searchInput resignFirstResponder];
 }
+
+#pragma mark UITextFieldDelegate Delegates
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [searchInput resignFirstResponder];
+    [self searchForWeather:nil];
+    return YES;
+}
+
+#pragma mark WeatherControllerDelegate Delegates
 
 - (void)didFinishLoadingWeather:(NSMutableDictionary *)weatherData
 {

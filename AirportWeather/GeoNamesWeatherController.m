@@ -20,6 +20,7 @@
 @synthesize delegate;
 @synthesize receivedData;
 
+// API endpoint
 static NSString *sGeoNamesPrefixURL = @"http://ws.geonames.org/weatherIcaoJSON?ICAO=";
 
 - (id)initWithDelegate:(id<WeatherControllerDelegate>) inDelegate
@@ -34,6 +35,7 @@ static NSString *sGeoNamesPrefixURL = @"http://ws.geonames.org/weatherIcaoJSON?I
 
 - (void)retrieveWeatherData:(NSString *)airportCode
 {
+    // Format the url with airportCode
     NSString *sGeoNamesURL = [NSString stringWithFormat:@"%@%@",
                                 sGeoNamesPrefixURL,
                                 airportCode];
@@ -50,29 +52,28 @@ static NSString *sGeoNamesPrefixURL = @"http://ws.geonames.org/weatherIcaoJSON?I
     if (theConnection) {
         // Create the NSMutableData to hold the received data.
         // receivedData is an instance variable declared elsewhere.
-        receivedData = [NSMutableData data];
+        [self setReceivedData:[NSMutableData data]];
     } else {
         // Inform the user that the connection failed.
-        [delegate didFinishLoadingWeather:nil];
+        [[self delegate] didFinishLoadingWeather:nil];
     }
 }
 
 #pragma mark NSURLConnection Delegates
 - (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response
 {
-    [receivedData setLength:0];
+    [[self receivedData] setLength:0];
 }
 
 - (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data
 {
-    // Append the new data to receivedData.
-    [receivedData appendData:data];
+    [[self receivedData] appendData:data];
 }
 
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection
 {
     // Parse resulting data and call delegate with results
-    NSMutableDictionary *weatherDict = [parser objectWithData:receivedData];
+    NSMutableDictionary *weatherDict = [parser objectWithData:[self receivedData]];
     [[self delegate] didFinishLoadingWeather:weatherDict];
 }
 
@@ -83,5 +84,6 @@ static NSString *sGeoNamesPrefixURL = @"http://ws.geonames.org/weatherIcaoJSON?I
     NSLog(@"Connection failed! Error - %@ %@",
           [error localizedDescription],
           [[error userInfo] objectForKey:NSURLErrorFailingURLStringErrorKey]);
+    [[self delegate] didFinishLoadingWeather:nil];
 }
 @end
