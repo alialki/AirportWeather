@@ -1,0 +1,389 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2BFC3FE016038BA0000102B2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BFC3FDF16038BA0000102B2 /* UIKit.framework */; };
+		2BFC3FE216038BA0000102B2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BFC3FE116038BA0000102B2 /* Foundation.framework */; };
+		2BFC3FE416038BA0000102B2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BFC3FE316038BA0000102B2 /* CoreGraphics.framework */; };
+		2BFC3FEA16038BA0000102B2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2BFC3FE816038BA0000102B2 /* InfoPlist.strings */; };
+		2BFC3FEC16038BA0000102B2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BFC3FEB16038BA0000102B2 /* main.m */; };
+		2BFC3FF016038BA0000102B2 /* AWAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BFC3FEF16038BA0000102B2 /* AWAppDelegate.m */; };
+		2BFC3FF316038BA0000102B2 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BFC3FF116038BA0000102B2 /* MainStoryboard_iPhone.storyboard */; };
+		2BFC3FF616038BA1000102B2 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BFC3FF416038BA1000102B2 /* MainStoryboard_iPad.storyboard */; };
+		2BFC3FF916038BA1000102B2 /* AWViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BFC3FF816038BA1000102B2 /* AWViewController.m */; };
+		2BFC400116039706000102B2 /* GeoNamesWeatherController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BFC400016039706000102B2 /* GeoNamesWeatherController.m */; };
+		2BFC406B1605A446000102B2 /* NSObject+SBJson.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BFC40531605A446000102B2 /* NSObject+SBJson.m */; };
+		2BFC406C1605A446000102B2 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BFC40561605A446000102B2 /* SBJsonParser.m */; };
+		2BFC406D1605A446000102B2 /* SBJsonStreamParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BFC40581605A446000102B2 /* SBJsonStreamParser.m */; };
+		2BFC406E1605A446000102B2 /* SBJsonStreamParserAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BFC405A1605A446000102B2 /* SBJsonStreamParserAccumulator.m */; };
+		2BFC406F1605A446000102B2 /* SBJsonStreamParserAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BFC405C1605A446000102B2 /* SBJsonStreamParserAdapter.m */; };
+		2BFC40701605A446000102B2 /* SBJsonStreamParserState.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BFC405E1605A446000102B2 /* SBJsonStreamParserState.m */; };
+		2BFC40711605A446000102B2 /* SBJsonStreamWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BFC40601605A446000102B2 /* SBJsonStreamWriter.m */; };
+		2BFC40721605A446000102B2 /* SBJsonStreamWriterAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BFC40621605A446000102B2 /* SBJsonStreamWriterAccumulator.m */; };
+		2BFC40731605A446000102B2 /* SBJsonStreamWriterState.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BFC40641605A446000102B2 /* SBJsonStreamWriterState.m */; };
+		2BFC40741605A446000102B2 /* SBJsonTokeniser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BFC40661605A446000102B2 /* SBJsonTokeniser.m */; };
+		2BFC40751605A446000102B2 /* SBJsonUTF8Stream.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BFC40681605A446000102B2 /* SBJsonUTF8Stream.m */; };
+		2BFC40761605A446000102B2 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BFC406A1605A446000102B2 /* SBJsonWriter.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2BFC3FDB16038BA0000102B2 /* AirportWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirportWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BFC3FDF16038BA0000102B2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2BFC3FE116038BA0000102B2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2BFC3FE316038BA0000102B2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2BFC3FE716038BA0000102B2 /* AirportWeather-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AirportWeather-Info.plist"; sourceTree = "<group>"; };
+		2BFC3FE916038BA0000102B2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2BFC3FEB16038BA0000102B2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2BFC3FED16038BA0000102B2 /* AirportWeather-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AirportWeather-Prefix.pch"; sourceTree = "<group>"; };
+		2BFC3FEE16038BA0000102B2 /* AWAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AWAppDelegate.h; sourceTree = "<group>"; };
+		2BFC3FEF16038BA0000102B2 /* AWAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AWAppDelegate.m; sourceTree = "<group>"; };
+		2BFC3FF216038BA0000102B2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		2BFC3FF516038BA1000102B2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		2BFC3FF716038BA1000102B2 /* AWViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AWViewController.h; sourceTree = "<group>"; };
+		2BFC3FF816038BA1000102B2 /* AWViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AWViewController.m; sourceTree = "<group>"; };
+		2BFC3FFF16039706000102B2 /* GeoNamesWeatherController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeoNamesWeatherController.h; sourceTree = "<group>"; };
+		2BFC400016039706000102B2 /* GeoNamesWeatherController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeoNamesWeatherController.m; sourceTree = "<group>"; };
+		2BFC40521605A446000102B2 /* NSObject+SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJson.h"; sourceTree = "<group>"; };
+		2BFC40531605A446000102B2 /* NSObject+SBJson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJson.m"; sourceTree = "<group>"; };
+		2BFC40541605A446000102B2 /* SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJson.h; sourceTree = "<group>"; };
+		2BFC40551605A446000102B2 /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		2BFC40561605A446000102B2 /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		2BFC40571605A446000102B2 /* SBJsonStreamParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParser.h; sourceTree = "<group>"; };
+		2BFC40581605A446000102B2 /* SBJsonStreamParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParser.m; sourceTree = "<group>"; };
+		2BFC40591605A446000102B2 /* SBJsonStreamParserAccumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserAccumulator.h; sourceTree = "<group>"; };
+		2BFC405A1605A446000102B2 /* SBJsonStreamParserAccumulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserAccumulator.m; sourceTree = "<group>"; };
+		2BFC405B1605A446000102B2 /* SBJsonStreamParserAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserAdapter.h; sourceTree = "<group>"; };
+		2BFC405C1605A446000102B2 /* SBJsonStreamParserAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserAdapter.m; sourceTree = "<group>"; };
+		2BFC405D1605A446000102B2 /* SBJsonStreamParserState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserState.h; sourceTree = "<group>"; };
+		2BFC405E1605A446000102B2 /* SBJsonStreamParserState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserState.m; sourceTree = "<group>"; };
+		2BFC405F1605A446000102B2 /* SBJsonStreamWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriter.h; sourceTree = "<group>"; };
+		2BFC40601605A446000102B2 /* SBJsonStreamWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriter.m; sourceTree = "<group>"; };
+		2BFC40611605A446000102B2 /* SBJsonStreamWriterAccumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriterAccumulator.h; sourceTree = "<group>"; };
+		2BFC40621605A446000102B2 /* SBJsonStreamWriterAccumulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriterAccumulator.m; sourceTree = "<group>"; };
+		2BFC40631605A446000102B2 /* SBJsonStreamWriterState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriterState.h; sourceTree = "<group>"; };
+		2BFC40641605A446000102B2 /* SBJsonStreamWriterState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriterState.m; sourceTree = "<group>"; };
+		2BFC40651605A446000102B2 /* SBJsonTokeniser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonTokeniser.h; sourceTree = "<group>"; };
+		2BFC40661605A446000102B2 /* SBJsonTokeniser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonTokeniser.m; sourceTree = "<group>"; };
+		2BFC40671605A446000102B2 /* SBJsonUTF8Stream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonUTF8Stream.h; sourceTree = "<group>"; };
+		2BFC40681605A446000102B2 /* SBJsonUTF8Stream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonUTF8Stream.m; sourceTree = "<group>"; };
+		2BFC40691605A446000102B2 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		2BFC406A1605A446000102B2 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2BFC3FD816038BA0000102B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BFC3FE016038BA0000102B2 /* UIKit.framework in Frameworks */,
+				2BFC3FE216038BA0000102B2 /* Foundation.framework in Frameworks */,
+				2BFC3FE416038BA0000102B2 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2BFC3FD016038BA0000102B2 = {
+			isa = PBXGroup;
+			children = (
+				2BFC3FE516038BA0000102B2 /* AirportWeather */,
+				2BFC3FDE16038BA0000102B2 /* Frameworks */,
+				2BFC3FDC16038BA0000102B2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2BFC3FDC16038BA0000102B2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2BFC3FDB16038BA0000102B2 /* AirportWeather.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2BFC3FDE16038BA0000102B2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2BFC40511605A446000102B2 /* json-framework */,
+				2BFC3FDF16038BA0000102B2 /* UIKit.framework */,
+				2BFC3FE116038BA0000102B2 /* Foundation.framework */,
+				2BFC3FE316038BA0000102B2 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2BFC3FE516038BA0000102B2 /* AirportWeather */ = {
+			isa = PBXGroup;
+			children = (
+				2BFC3FEE16038BA0000102B2 /* AWAppDelegate.h */,
+				2BFC3FEF16038BA0000102B2 /* AWAppDelegate.m */,
+				2BFC3FF116038BA0000102B2 /* MainStoryboard_iPhone.storyboard */,
+				2BFC3FF416038BA1000102B2 /* MainStoryboard_iPad.storyboard */,
+				2BFC3FF716038BA1000102B2 /* AWViewController.h */,
+				2BFC3FF816038BA1000102B2 /* AWViewController.m */,
+				2BFC3FFF16039706000102B2 /* GeoNamesWeatherController.h */,
+				2BFC400016039706000102B2 /* GeoNamesWeatherController.m */,
+				2BFC3FE616038BA0000102B2 /* Supporting Files */,
+			);
+			path = AirportWeather;
+			sourceTree = "<group>";
+		};
+		2BFC3FE616038BA0000102B2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2BFC3FE716038BA0000102B2 /* AirportWeather-Info.plist */,
+				2BFC3FE816038BA0000102B2 /* InfoPlist.strings */,
+				2BFC3FEB16038BA0000102B2 /* main.m */,
+				2BFC3FED16038BA0000102B2 /* AirportWeather-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2BFC40511605A446000102B2 /* json-framework */ = {
+			isa = PBXGroup;
+			children = (
+				2BFC40521605A446000102B2 /* NSObject+SBJson.h */,
+				2BFC40531605A446000102B2 /* NSObject+SBJson.m */,
+				2BFC40541605A446000102B2 /* SBJson.h */,
+				2BFC40551605A446000102B2 /* SBJsonParser.h */,
+				2BFC40561605A446000102B2 /* SBJsonParser.m */,
+				2BFC40571605A446000102B2 /* SBJsonStreamParser.h */,
+				2BFC40581605A446000102B2 /* SBJsonStreamParser.m */,
+				2BFC40591605A446000102B2 /* SBJsonStreamParserAccumulator.h */,
+				2BFC405A1605A446000102B2 /* SBJsonStreamParserAccumulator.m */,
+				2BFC405B1605A446000102B2 /* SBJsonStreamParserAdapter.h */,
+				2BFC405C1605A446000102B2 /* SBJsonStreamParserAdapter.m */,
+				2BFC405D1605A446000102B2 /* SBJsonStreamParserState.h */,
+				2BFC405E1605A446000102B2 /* SBJsonStreamParserState.m */,
+				2BFC405F1605A446000102B2 /* SBJsonStreamWriter.h */,
+				2BFC40601605A446000102B2 /* SBJsonStreamWriter.m */,
+				2BFC40611605A446000102B2 /* SBJsonStreamWriterAccumulator.h */,
+				2BFC40621605A446000102B2 /* SBJsonStreamWriterAccumulator.m */,
+				2BFC40631605A446000102B2 /* SBJsonStreamWriterState.h */,
+				2BFC40641605A446000102B2 /* SBJsonStreamWriterState.m */,
+				2BFC40651605A446000102B2 /* SBJsonTokeniser.h */,
+				2BFC40661605A446000102B2 /* SBJsonTokeniser.m */,
+				2BFC40671605A446000102B2 /* SBJsonUTF8Stream.h */,
+				2BFC40681605A446000102B2 /* SBJsonUTF8Stream.m */,
+				2BFC40691605A446000102B2 /* SBJsonWriter.h */,
+				2BFC406A1605A446000102B2 /* SBJsonWriter.m */,
+			);
+			name = "json-framework";
+			path = AirportWeather/Classes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2BFC3FDA16038BA0000102B2 /* AirportWeather */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2BFC3FFC16038BA1000102B2 /* Build configuration list for PBXNativeTarget "AirportWeather" */;
+			buildPhases = (
+				2BFC3FD716038BA0000102B2 /* Sources */,
+				2BFC3FD816038BA0000102B2 /* Frameworks */,
+				2BFC3FD916038BA0000102B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AirportWeather;
+			productName = AirportWeather;
+			productReference = 2BFC3FDB16038BA0000102B2 /* AirportWeather.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2BFC3FD216038BA0000102B2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = AW;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Wesley Kim";
+			};
+			buildConfigurationList = 2BFC3FD516038BA0000102B2 /* Build configuration list for PBXProject "AirportWeather" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2BFC3FD016038BA0000102B2;
+			productRefGroup = 2BFC3FDC16038BA0000102B2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2BFC3FDA16038BA0000102B2 /* AirportWeather */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2BFC3FD916038BA0000102B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BFC3FEA16038BA0000102B2 /* InfoPlist.strings in Resources */,
+				2BFC3FF316038BA0000102B2 /* MainStoryboard_iPhone.storyboard in Resources */,
+				2BFC3FF616038BA1000102B2 /* MainStoryboard_iPad.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2BFC3FD716038BA0000102B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BFC3FEC16038BA0000102B2 /* main.m in Sources */,
+				2BFC3FF016038BA0000102B2 /* AWAppDelegate.m in Sources */,
+				2BFC3FF916038BA1000102B2 /* AWViewController.m in Sources */,
+				2BFC400116039706000102B2 /* GeoNamesWeatherController.m in Sources */,
+				2BFC406B1605A446000102B2 /* NSObject+SBJson.m in Sources */,
+				2BFC406C1605A446000102B2 /* SBJsonParser.m in Sources */,
+				2BFC406D1605A446000102B2 /* SBJsonStreamParser.m in Sources */,
+				2BFC406E1605A446000102B2 /* SBJsonStreamParserAccumulator.m in Sources */,
+				2BFC406F1605A446000102B2 /* SBJsonStreamParserAdapter.m in Sources */,
+				2BFC40701605A446000102B2 /* SBJsonStreamParserState.m in Sources */,
+				2BFC40711605A446000102B2 /* SBJsonStreamWriter.m in Sources */,
+				2BFC40721605A446000102B2 /* SBJsonStreamWriterAccumulator.m in Sources */,
+				2BFC40731605A446000102B2 /* SBJsonStreamWriterState.m in Sources */,
+				2BFC40741605A446000102B2 /* SBJsonTokeniser.m in Sources */,
+				2BFC40751605A446000102B2 /* SBJsonUTF8Stream.m in Sources */,
+				2BFC40761605A446000102B2 /* SBJsonWriter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2BFC3FE816038BA0000102B2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2BFC3FE916038BA0000102B2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2BFC3FF116038BA0000102B2 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2BFC3FF216038BA0000102B2 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		2BFC3FF416038BA1000102B2 /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2BFC3FF516038BA1000102B2 /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2BFC3FFA16038BA1000102B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2BFC3FFB16038BA1000102B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2BFC3FFD16038BA1000102B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AirportWeather/AirportWeather-Prefix.pch";
+				INFOPLIST_FILE = "AirportWeather/AirportWeather-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		2BFC3FFE16038BA1000102B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AirportWeather/AirportWeather-Prefix.pch";
+				INFOPLIST_FILE = "AirportWeather/AirportWeather-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2BFC3FD516038BA0000102B2 /* Build configuration list for PBXProject "AirportWeather" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BFC3FFA16038BA1000102B2 /* Debug */,
+				2BFC3FFB16038BA1000102B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2BFC3FFC16038BA1000102B2 /* Build configuration list for PBXNativeTarget "AirportWeather" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BFC3FFD16038BA1000102B2 /* Debug */,
+				2BFC3FFE16038BA1000102B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2BFC3FD216038BA0000102B2 /* Project object */;
+}
