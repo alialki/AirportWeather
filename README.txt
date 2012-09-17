@@ -24,6 +24,7 @@ Design Rationale:
 Error Handling:
 - If there are every connectivity issues, the app will let the user know that weather cannot be retrieved at the time.
 - Similarly, if an invalid code is entered, the app will let the user know it's not a valid code.
+    On re-entry or relaunch, the app will then load the most recent legitimate location searched for.
 
 Thanks for reading!
 
