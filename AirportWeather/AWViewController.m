@@ -34,7 +34,18 @@ NSString *sLocationPreferenceKey = @"sLocationPreferenceKey";
     
     //init the weather controller used to get weather data
     weatherController = [[GeoNamesWeatherController alloc] initWithDelegate:self];
+
+    [self searchForWeatherFromPreferences];
     
+    //listen for application did become active
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(searchForWeatherFromPreferences)
+                                                 name:UIApplicationDidBecomeActiveNotification
+                                                 object:nil];
+}
+
+- (void)searchForWeatherFromPreferences
+{
     //retrieve potential saved location
     NSString *savedLocation = [[NSUserDefaults standardUserDefaults] stringForKey:sLocationPreferenceKey];
     
@@ -43,7 +54,6 @@ NSString *sLocationPreferenceKey = @"sLocationPreferenceKey";
         [self searchForWeather:nil];
     }
 }
-
 - (IBAction)searchForWeather:(id)sender;
 {
     //call weather controller to retrieve weather data
