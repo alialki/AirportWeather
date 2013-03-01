@@ -29,6 +29,6 @@ Error Handling
 
 Thanks for reading!
 
-- Wesley (wesleyjkim@gmail.com)
+- Wesley
 
 Last Modified: 9-16-2012
