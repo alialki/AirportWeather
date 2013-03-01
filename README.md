@@ -29,6 +29,4 @@ Error Handling
 
 Thanks for reading!
 
-- Wesley
-
 Last Modified: 9-16-2012
